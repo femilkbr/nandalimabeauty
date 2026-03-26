@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanda Lima Beauty | Minhas Lojas</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary-blue: #003366; /* Azul Marinho Profundo */
+            --accent-blue: #0056b3;  /* Azul Royal */
+            --soft-blue: #e6f2ff;    /* Azul Muito Claro para Fundo */
+            --medium-blue: #6699cc;  /* Azul Médio para detalhes */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--soft-blue);
+            color: var(--primary-blue);
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 1rem 3rem;
+            text-align: center;
+            background: linear-gradient(180deg, #d1e7ff 0%, var(--soft-blue) 100%);
+        }
+
+        .profile-img {
+            width: 240px; /* Tamanho aumentado conforme solicitado */
+            height: 240px;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.03);
+        }
+
+        .subtitle {
+            max-width: 650px;
+            margin: 1.5rem auto;
+            color: #444;
+            font-weight: 300;
+        }
+
+        /* Album/Cards Styles */
+        .album-section {
+            padding-bottom: 5rem;
+        }
+
+        .store-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .store-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 51, 102, 0.15);
+        }
+
+        .store-card img {
+            height: 220px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .store-card:hover img {
+            opacity: 0.9;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .card-title {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-partner {
+            background-color: var(--medium-blue);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 4rem 0 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-col {
+            padding: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .footer-col:hover {
+            transform: translateY(-5px);
+        }
+
+        .footer-link {
+            color: var(--soft-blue);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+            display: block;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .social-icon {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+            color: var(--medium-blue);
+        }
+        
+        .footer-label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Perfil -->
+    <header class="hero">
+        <div class="container">
+            <img src="/Users/nandaact/nandalimabeauty/assets/profile.jpeg" 
+                 alt="Foto de perfil de Nanda Lima" 
+                 class="rounded-circle profile-img mb-4">
+            
+            <h1 class="display-4">Nanda Lima Beauty</h1>
+            <p class="subtitle lead">
+                Bem-vinda ao meu portal de beleza. Aqui você encontra todos os meus espaços de vendas oficiais e lojas parceiras selecionadas para realçar a sua essência.
+            </p>
+        </div>
+    </header>
+
+    <!-- Album de Lojas -->
+    <main class="album-section">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                
+                <!-- Loja Natura -->
+                <div class="col">
+                    <a href="SUA_URL_NATURA_AQUI" target="_blank" class="store-card h-100">
+                        <img src="/Users/nandaact/nandalimabeauty/assets/natura.webp" class="card-img-top" alt="Loja Natura">
+                        <div class="card-body">
+                            <h5 class="card-title">Espaço Natura</h5>
+                            <p class="card-text text-muted small">Produtos veganos e sustentáveis para o seu bem-estar diário.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Loja O Boticário -->
+                <div class="col">
+                    <a href="SUA_URL_BOTICARIO_AQUI" target="_blank" class="store-card h-100">
+                        <img src="/Users/nandaact/nandalimabeauty/assets/novo-logo-o-boticario-2020.jpg" class="card-img-top" alt="O Boticário">
+                        <div class="card-body">
+                            <h5 class="card-title">O Boticário</h5>
+                            <p class="card-text text-muted small">As fragrâncias e cosméticos mais amados do Brasil.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Shopee -->
+                <div class="col">
+                    <a href="SUA_URL_SHOPEE_AQUI" target="_blank" class="store-card h-100">
+                        <img src="/Users/nandaact/nandalimabeauty/assets/shopee-logo.jpg" class="card-img-top" alt="Shopee">
+                        <div class="card-body">
+                            <h5 class="card-title">Minha Vitrine Shopee</h5>
+                            <p class="card-text text-muted small">Achadinhos de beleza e acessórios com ofertas imperdíveis.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Parceiro 1: Você mais Bonita Store -->
+                <div class="col">
+                    <a href="https://www.instagram.com/vocemaisbonita.store/" target="_blank" class="store-card h-100">
+                        <img src="/Users/nandaact/nandalimabeauty/assets/vocemaisbonitastore.png" class="card-img-top" alt="Você mais Bonita Store">
+                        <div class="card-body">
+                            <span class="badge rounded-pill badge-partner">Parceiro Oficial</span>
+                            <h5 class="card-title">Você mais Bonita Store</h5>
+                            <p class="card-text text-muted small">Camisetas com estampas que representam a sua tendência.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Parceiro 2: Sensitpe Lingerie -->
+                <div class="col">
+                    <a href="https://www.instagram.com/sensitelingerie/" target="_blank" class="store-card h-100">
+                        <img src="/Users/nandaact/nandalimabeauty/assets/sensitelingerie.jpg" class="card-img-top" alt="Sensitpe Lingerie">
+                        <div class="card-body">
+                            <span class="badge rounded-pill badge-partner">Parceiro Oficial</span>
+                            <h5 class="card-title">Sensite Lingerie</h5>
+                            <p class="card-text text-muted small">Conforto e elegância para elevar a sua autoestima.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-md-3 g-4 align-items-start">
+                
+                <!-- Coluna Instagram -->
+                <div class="col footer-col">
+                    <a href="https://instagram.com/nandalima.mind" target="_blank" class="footer-link">
+                        <i class="bi bi-instagram social-icon"></i>
+                        <span class="footer-label">Instagram</span>
+                        @nandalima.mind
+                    </a>
+                </div>
+
+                <!-- Coluna E-mail -->
+                <div class="col footer-col">
+                    <a href="mailto:contato@nandalimabeauty.com.br" class="footer-link">
+                        <i class="bi bi-envelope-at social-icon"></i>
+                        <span class="footer-label">E-mail</span>
+                        contato@nandalimabeauty.com.br
+                    </a>
+                </div>
+
+                <!-- Coluna Linkedin -->
+                <div class="col footer-col">
+                    <a href="https://linkedin.com/in/nandalima" target="_blank" class="footer-link">
+                        <i class="bi bi-linkedin social-icon"></i>
+                        <span class="footer-label">Linkedin</span>
+                        Fernanda Lima QA
+                    </a>
+                </div>
+
+            </div>
+            
+            <hr class="w-75 mx-auto my-5" style="opacity: 0.1; border-color: white;">
+            <p class="small text-white-50 mb-0">© 2026 Nanda Lima Beauty. João Pessoa - PB.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
